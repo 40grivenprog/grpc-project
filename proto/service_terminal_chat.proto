@@ -1,0 +1,11 @@
+syntax="proto3";
+
+package pb;
+
+import "rpc_say_hello.proto";
+
+option go_package = "github.com/40grivenprog/terminal_chat/pb";
+
+service TerminalChat {
+  rpc ProcessMessage (MessageRequest) returns (MessageReply) {}
+}

@@ -1,0 +1,14 @@
+syntax="proto3";
+
+package pb;
+
+option go_package = "github.com/40grivenprog/terminal_chat/pb";
+
+message MessageRequest {
+  string username = 1;
+  string message = 2;
+}
+
+message MessageReply {
+  string message = 1;
+}
